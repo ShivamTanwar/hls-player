@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HLS Stream Player</title>
+
+    <!-- Video.js CSS -->
+    <link href="https://vjs.zencdn.net/7.18.1/video-js.css" rel="stylesheet" />
+
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #player {
+            width: 640px;
+            height: 360px;
+        }
+    </style>
+</head>
+<body>
+
+    <video
+        id="player"
+        class="video-js vjs-default-skin"
+        controls
+        preload="auto"
+        width="640"
+        height="360"
+        data-setup='{}'>
+        <source src="http://fl2.moveonjoy.com/FOX_Sports_2/index.m3u8" type="application/x-mpegURL">
+        Your browser does not support the video tag.
+    </video>
+
+    <!-- Video.js JavaScript -->
+    <script src="https://vjs.zencdn.net/7.18.1/video.js"></script>
+
+</body>
+</html>
